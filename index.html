@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0A0A0C">
+<title>Kinetic Management</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #080910;
+    --card: #0E1018;
+    --bdr: #1E2330;
+    --tx: #ECEEF5;
+    --mu: #9098B0;
+    --mu2: #6B7399;
+    --pk: #FF2D6B;
+    --or: #FF6B00;
+    --cy: #00C8FF;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--tx);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 24px 80px;
+  }
+  .brand {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--mu2);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  h1 {
+    font-size: 36px;
+    font-weight: 800;
+    margin: 0 0 16px;
+    background: linear-gradient(135deg, var(--pk), var(--or), var(--cy));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .lede {
+    font-size: 16px;
+    color: var(--mu);
+    margin: 0 0 40px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--bdr);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: var(--tx);
+    display: block;
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .card:hover {
+    border-color: var(--cy);
+    transform: translateY(-1px);
+  }
+  .card h2 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .card p {
+    margin: 0;
+    color: var(--mu);
+    font-size: 14px;
+  }
+  footer {
+    text-align: center;
+    margin-top: 60px;
+    color: var(--mu2);
+    font-size: 12px;
+  }
+  footer a {
+    color: var(--mu2);
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">KINETIC MANAGEMENT</div>
+    <h1>Kinetic Management Portal</h1>
+    <p class="lede">A private app for clients and staff of Kinetic Management. Access by invitation only.</p>
+
+    <a href="privacy.html" class="card">
+      <h2>Privacy Policy</h2>
+      <p>What we collect, how we use it, and how it's protected.</p>
+    </a>
+
+    <a href="support.html" class="card">
+      <h2>Support</h2>
+      <p>Need help with the app? Here's how to reach us.</p>
+    </a>
+
+    <footer>
+      &copy; 2026 Kinetic Management &middot; <a href="mailto:craig@kinetic-mgmt.com">craig@kinetic-mgmt.com</a>
+    </footer>
+  </div>
+</body>
+</html>
