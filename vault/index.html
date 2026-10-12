@@ -1,0 +1,154 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>An Evening in The Vault &mdash; RSVP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Cormorant Garamond',Georgia,serif;background:#07070b;color:#EDE6D8;-webkit-font-smoothing:antialiased}
+.wrap{max-width:560px;margin:0 auto;background:#0C0C12;min-height:100vh}
+.top{padding:34px 30px 0;text-align:center}
+.mark{font-family:'Cormorant',serif;font-size:15px;letter-spacing:8px;color:#B99A5B;font-weight:600}
+.rule{height:2px;background:#B99A5B;margin:22px 0 0}
+.rule2{height:1px;background:#6B5833;width:62%;margin:4px auto 0}
+.est{font-family:'Cormorant',serif;font-size:11px;letter-spacing:6px;color:#8A7442;font-weight:600;margin-top:40px}
+h1{font-family:'Cormorant',serif;font-weight:400;font-size:52px;line-height:1.04;color:#F2EDE3;letter-spacing:1px;margin-top:26px}
+h1 em{display:block;font-style:italic;color:#e8cb93}
+.orn{display:block;margin:28px auto 0}
+.when{margin-top:30px;font-family:'Cormorant',serif;font-size:26px;color:#F4E3BC;line-height:1.4}
+.hrs{font-family:'Cormorant',serif;font-size:15px;letter-spacing:5px;color:#B99A5B;font-weight:600;margin-top:12px}
+.where{font-size:19px;color:#C8C0B0;line-height:1.65;margin-top:20px}
+.hair{height:1px;background:#1F1B14;margin:38px 30px 0}
+.card{padding:36px 30px 44px}
+.greet{font-size:23px;line-height:1.6;color:#EDE6D8}
+.greet b{color:#F2EDE3;font-weight:600}
+.ask{font-family:'Cormorant',serif;font-size:13px;letter-spacing:5px;color:#B99A5B;font-weight:600;margin-top:36px;text-transform:uppercase}
+.opts{margin-top:16px}
+.opt{position:relative;margin-top:12px}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt span{display:block;border:1.5px solid #3A3222;background:#121219;padding:19px 22px;cursor:pointer;font-family:'Cormorant',serif;font-size:21px;font-weight:600;color:#EDE6D8;letter-spacing:.5px;transition:.15s}
+.opt input:checked + span{border-color:#B99A5B;background:#1A1710;color:#F4E3BC;box-shadow:0 0 0 1px #B99A5B inset}
+.fld{display:block;margin-top:28px}
+.lbl{display:block;font-family:'Cormorant',serif;font-size:13px;letter-spacing:4px;text-transform:uppercase;color:#8A7442;font-weight:600;margin-bottom:10px}
+input[type=text]{width:100%;border:none;border-bottom:1.5px solid #3A3222;background:transparent;font-family:'Cormorant Garamond',serif;font-size:21px;color:#F2EDE3;padding:9px 2px;outline:none}
+input[type=text]:focus{border-color:#B99A5B}
+#guestwrap{overflow:hidden;max-height:0;transition:max-height .3s ease}
+#guestwrap.open{max-height:220px}
+button{width:100%;margin-top:38px;background:#B99A5B;color:#0C0C12;border:none;padding:20px;font-family:'Cormorant',serif;font-size:18px;font-weight:600;letter-spacing:4px;text-transform:uppercase;cursor:pointer}
+button:disabled{opacity:.55}
+.err{display:none;color:#E89A8A;text-align:center;font-size:19px;margin-top:18px}
+.foot{text-align:center;padding:26px 20px 40px;font-family:'Cormorant',serif;font-size:11px;letter-spacing:4px;color:#5E584E}
+.done{padding:50px 32px 56px;text-align:center}
+.done h2{font-family:'Cormorant',serif;font-weight:400;font-size:40px;color:#F2EDE3;line-height:1.15}
+.done p{font-size:22px;line-height:1.65;color:#C8C0B0;margin-top:22px}
+.done .det{font-family:'Cormorant',serif;font-size:21px;color:#F4E3BC;line-height:1.7;margin-top:30px}
+</style></head><body><div class="wrap" id="wrap">
+
+<div class="top">
+  <div class="mark">KINETIC</div>
+  <div class="rule"></div><div class="rule2"></div>
+  <div class="est">THE NATIONAL &nbsp;&middot;&nbsp; EST 1931</div>
+  <h1>An Evening in<em>The Vault.</em></h1>
+  <svg class="orn" width="150" height="9" viewBox="0 0 150 9"><path d="M2 4.5H58" stroke="#6B5833" stroke-width="1.2" stroke-linecap="round"/><path d="M92 4.5H148" stroke="#6B5833" stroke-width="1.2" stroke-linecap="round"/><path d="M75 .8l3.3 3.7L75 8.2l-3.3-3.7z" fill="#B99A5B"/></svg>
+  <div class="when">Thursday, December 10</div>
+  <div class="hrs">FIVE UNTIL SEVEN</div>
+  <div class="where">The Vault at The National<br>120 North Robinson Avenue, Oklahoma City</div>
+</div>
+
+<div class="hair"></div>
+
+<div class="card">
+  <div class="greet" id="greet"></div>
+
+  <form id="f">
+    <input type="hidden" name="household" id="household">
+    <input type="hidden" name="party_size" id="party_size" value="0">
+
+    <div class="ask">Will you join us</div>
+    <div class="opts" id="opts"></div>
+
+    <div id="guestwrap"><label class="fld"><span class="lbl">Your guest's name</span>
+      <input type="text" name="guest_name" id="guest_name" autocomplete="off"></label></div>
+
+    <label class="fld"><span class="lbl">Replying as</span>
+      <input type="text" name="full_name" id="full_name" required autocomplete="name"></label>
+
+    <label class="fld"><span class="lbl">Anything the kitchen should know</span>
+      <input type="text" name="dietary" placeholder="Allergies, preferences, or leave blank" autocomplete="off"></label>
+
+    <label class="fld"><span class="lbl">Best number or email</span>
+      <input type="text" name="contact" autocomplete="tel"></label>
+
+    <button type="submit" id="btn">Send My Reply</button>
+    <div class="err" id="err">That did not go through. Please try once more.</div>
+  </form>
+</div>
+
+<div class="foot">AN INVITATION FROM &middot; KINETIC MANAGEMENT</div>
+</div>
+
+<script>
+var API="https://fegzfjftfgqjjgatihyi.supabase.co/functions/v1/vault-rsvp";
+
+var H={
+ "mark-chrissy":{names:"Mark and Chrissy",couple:true,first:"Mark"},
+ "brooke-josh":{names:"Brooke and Josh",couple:true,first:"Brooke"},
+ "matt":{names:"Matt",couple:false,first:"Matt"},
+ "sarah":{names:"Sarah",couple:false,first:"Sarah"},
+ "colt":{names:"Colt",couple:false,first:"Colt"}
+};
+
+var key=(new URLSearchParams(location.search).get("h")||"").toLowerCase();
+var cfg=H[key];
+
+if(!cfg){
+ document.getElementById("wrap").innerHTML='<div class="done"><h2>This link is incomplete.</h2><p>Please open the link exactly as it appears in your invitation, or reply to Craig and he will send a fresh one.</p><div class="det"><a href="mailto:craig@kinetic-mgmt.com" style="color:#B99A5B;text-decoration:none">craig@kinetic-mgmt.com</a></div></div>';
+}else{
+ document.getElementById("household").value=key;
+ document.getElementById("greet").innerHTML='<b>'+cfg.names+',</b><br>Two seats are held in your name. Let us know who is coming and the table is set.';
+
+ var opts=cfg.couple
+  ? [["yes",2,"Both of us will be there"],["yes",1,"Just one of us"],["no",0,"We cannot make it"]]
+  : [["yes",2,"I will be there, with my guest"],["yes",1,"Just me"],["no",0,"I cannot make it"]];
+
+ var html="";
+ for(var i=0;i<opts.length;i++){
+  html+='<label class="opt"><input type="radio" name="attending" value="'+opts[i][0]+'" data-party="'+opts[i][1]+'" required><span>'+opts[i][2]+'</span></label>';
+ }
+ document.getElementById("opts").innerHTML=html;
+
+ var radios=document.querySelectorAll('input[name=attending]');
+ for(var j=0;j<radios.length;j++){
+  radios[j].addEventListener("change",function(){
+   var p=this.getAttribute("data-party");
+   document.getElementById("party_size").value=p;
+   var gw=document.getElementById("guestwrap");
+   if(!cfg.couple && p==="2"){gw.classList.add("open");}
+   else{gw.classList.remove("open");document.getElementById("guest_name").value="";}
+  });
+ }
+
+ document.getElementById("f").addEventListener("submit",function(e){
+  e.preventDefault();
+  var btn=document.getElementById("btn"),err=document.getElementById("err");
+  err.style.display="none";btn.disabled=true;btn.textContent="Sending...";
+  var fd=new FormData(e.target);
+  fetch(API,{method:"POST",body:fd})
+   .then(function(r){if(!r.ok)throw 0;return r;})
+   .then(function(){
+    var nm=(fd.get("full_name")||cfg.first).trim().split(" ")[0]||cfg.first;
+    var yes=fd.get("attending")==="yes";
+    var n=parseInt(fd.get("party_size")||"0",10);
+    var msg,det="";
+    if(yes){
+     msg=(n===2?"Two seats are yours.":"Your seat is yours.")+" Nothing else to do, just come hungry.";
+     det="Thursday, December 10<br>Five until seven<br>The Vault at The National<br>120 North Robinson Avenue, Oklahoma City";
+    }else{
+     msg="Thank you for letting us know. You will be missed, and we will raise one for you.";
+    }
+    document.getElementById("wrap").innerHTML='<div class="top"><div class="mark">KINETIC</div><div class="rule"></div><div class="rule2"></div></div><div class="done"><h2>Thank you, '+nm+'.</h2><p>'+msg+'</p>'+(det?'<svg class="orn" width="150" height="9" viewBox="0 0 150 9"><path d="M2 4.5H58" stroke="#6B5833" stroke-width="1.2" stroke-linecap="round"/><path d="M92 4.5H148" stroke="#6B5833" stroke-width="1.2" stroke-linecap="round"/><path d="M75 .8l3.3 3.7L75 8.2l-3.3-3.7z" fill="#B99A5B"/></svg><div class="det">'+det+'</div>':'')+'</div><div class="foot">AN INVITATION FROM &middot; KINETIC MANAGEMENT</div>';
+    window.scrollTo(0,0);
+   })
+   .catch(function(){btn.disabled=false;btn.textContent="Send My Reply";err.style.display="block";});
+ });
+}
+</script>
+</body></html>
